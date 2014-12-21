@@ -1,0 +1,374 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    font-family: sans-serif;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*:after, *:before {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    background-color: rgba(25, 25, 25, 0.9);
+    color: #fff;
+}
+
+.nav {
+    text-align: center;
+}
+
+/*Toggle Navigation*/
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	height: 40px;
+	width: 40px;
+    margin: 0 auto;
+	background: #fff url('../images/nav-icon.svg') no-repeat center center;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color: #356bd1;
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+	display: block;
+    width: 100%;
+    text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	color: #d83e3e;
+}
+
+/* Toggle Nav*/
+
+.nav-top{
+    display: none;
+}
+
+.nav-top[data-state="expanded"]{
+    display: block;
+}
+
+nav ul {
+    margin: 0 auto; 
+    text-align: center;
+}
+
+nav ul li {
+    font-size: 1em;
+    display: inline-block;
+    line-height: 1;
+    margin: 0.2em 4em 0.2em 4em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    list-style-type: none;
+}
+	
+@media only screen and (min-width: 35em) {
+    
+    header {
+        position: fixed;
+        padding: 1em;
+        text-align: center;
+    }
+	
+	.nav {
+		overflow: auto;	
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;	
+	}
+	
+	.nav-top{
+		display: block;
+	}
+	
+}
+/* toggle navigation ends*/
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 1.4em;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;    
+    font-size: 2.5em;
+    line-height: 1.4em;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1.4em;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: .2;
+    line-height: 1.5em;
+    color: #a49841;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    font-size: 1em;
+    line-height: 1.7em;
+    padding: 0.8em 0 0.8em 0;
+}
+
+.flex-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #d83e3e;
+}
+
+a:link {
+    color: #d83e3e;
+}
+
+a:hover {
+    color: #d83e3e;
+    transition: ease-in-out 200ms;
+}
+
+a:active {
+    color: #d83e3e;
+}
+
+::-moz-selection {
+    color: #d83e3e;
+    background: #000;
+}
+
+::selection {
+    color: #d83e3e; 
+    background: #000;
+}
+
+.banner {
+    z-index: 3000;
+    position: relative;
+}
+
+.banner-text {
+    padding: 0 22em 0 22em;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+}
+
+.banner-text h1 {
+    text-align: center;
+}
+
+.banner p {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 1.2em;
+    text-shadow: 0 6px 10px rgba(0, 0, 0, 0.3)
+}
+
+.ban-btn {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #db3939; 
+    color: #fff;
+    max-width: 180px;
+    margin: 0 auto;
+    padding: 0.2em;
+    margin: 0 auto;
+    box-shadow: 0 4px 0 #a52424;
+}
+
+.ban-btn:hover {
+    background-color: #a52424;
+    color: #fff;
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    box-shadow: 0 2px 0 #791919;
+}
+
+.logo {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 0 0.2em 0;
+}
+
+.about {
+    position: relative;
+    background-image: url(../images/about-ban.jpg);
+    background-size: cover;
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+    z-index: 3001;
+    padding: 10rem 28% 10rem 28%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.about p {
+    font-size: 1.3em;
+}
+
+.about h2 {
+    font-size: 3em;
+}
+
+.serv {
+    position: relative;
+    overflow: hidden;
+    z-index: 2000;
+    text-align: center;
+    background-color: #fff;
+}
+
+.serv-info {
+    background-color: #265183;
+    padding: 1em;
+    text-align: left;
+    padding:  4em;
+}
+
+.serv img {
+    max-width: 400px;
+    padding: 1em;
+}
+
+.serv h2 {
+    color: #fff; 
+    font-size: 2.5em;
+    font-weight: 200;
+    margin: 0 auto;
+}
+
+.serv p {
+    color: #fff; 
+}
+
+.contact {
+    background-color: #242424;
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    line-height: 1.2em;
+    padding: 3em;
+}
+
+.contact ul {
+    text-align: center;
+    color: #fff;
+}
+
+.contact ul li {
+    text-align: center;
+    border-radius: 40px;
+}
+
+.social {
+    background-color: #242424;
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    line-height: 1.2em;
+    padding: 3em;
+}
+
+.social ul {
+    text-align: center;
+    color: #fff;
+}
+
+.social ul li:hover {
+    background-color: #fff;
+    transition: all 800ms ease;
+    -webkit-transition: all 800ms ease;
+}
+
+.social ul li {
+    text-align: center;
+    width: 50px;
+    display: inline-block;
+    border-radius: 40px;
+}
