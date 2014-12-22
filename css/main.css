@@ -142,7 +142,7 @@ nav ul li a{
 /* toggle navigation ends*/
 
 h1 {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
     font-weight: 800;
     font-size: 3em;
     line-height: 1.4em;
@@ -150,31 +150,31 @@ h1 {
 }
 
 h2 {
-    font-family: 'Futura', sans-serif;
-    font-weight: 400;    
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 100;    
     font-size: 2.5em;
     line-height: 1.4em;
     text-transform: uppercase;
 }
 
 h3 {
-    font-family: 'Futura', sans-serif;
-    font-weight: 400;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 800;
     font-size: 2em;
     line-height: 1.4em;
     text-transform: uppercase;
 }
 
 h4 {
-    font-family: 'Futura', sans-serif;
-    font-weight: 400;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 100;
     font-size: 1.5em;
     line-height: 1.4em;
     text-transform: uppercase;
 }
 
 h5 {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
     font-weight: 200;
     font-size: .2;
     line-height: 1.5em;
@@ -284,17 +284,17 @@ a:active {
     text-align: center;
     color: #000;
     z-index: 3001;
-    padding: 10rem 28% 10rem 28%;
+    padding: 10rem 23% 10rem 23%;
     margin: 0 auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-.about p {
-    font-size: 1.3em;
+.about h2 {
+    padding: 0 11% 0 11%;
 }
 
-.about h2 {
-    font-size: 3em;
+.about p {
+    font-size: 1.3em;
 }
 
 .serv {
@@ -306,26 +306,25 @@ a:active {
 }
 
 .serv-info {
-    background-color: #265183;
+    background-color: #dee4eb;
     padding: 1em;
     text-align: left;
-    padding:  4em;
+    padding: 5em 4.5em 4.5em 4.5em;
 }
 
 .serv img {
-    max-width: 400px;
+    max-width: 360px;
     padding: 1em;
 }
 
 .serv h2 {
-    color: #fff; 
-    font-size: 2.5em;
+    color: #000; 
     font-weight: 200;
     margin: 0 auto;
 }
 
 .serv p {
-    color: #fff; 
+    color: #000; 
 }
 
 .contact {
